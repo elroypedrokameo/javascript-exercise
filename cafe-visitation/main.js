@@ -24,13 +24,13 @@ function ruangCafe(name, age, money) {
 
   // TODO: answer here
   if (name === '') {
-    console.log('Anda tidak boleh masuk!') 
+    return 'Anda tidak boleh masuk!'
   } else if (money < juice) {
-    console.log('Uang tidak cukup. Anda harus pulang.') 
+    return 'Uang tidak cukup. Anda harus pulang.'
   } else if (age < 17) { 
-    console.log(`Anda bisa pesan juice. Sisa uang anda: ${money - juice}`) 
+    return `Anda bisa pesan juice. Sisa uang anda: ${money - juice}`
   } else {
-    console.log(`Anda bisa pesan latte. Sisa uang anda: ${money - latte}`) 
+    return `Anda bisa pesan latte. Sisa uang anda: ${money - latte}`
   }
 }
 
